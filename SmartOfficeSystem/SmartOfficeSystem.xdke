@@ -1,0 +1,98 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "currentBuildConfiguration": null,
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "editorTab": {
+    "currentEditorMode": 0
+  },
+  "iot-tab": {
+    "fileStatus": {
+      ".gitignore": {
+        "previousModTime": 1499753701719,
+        "modified": 1499753701719,
+        "seen": true,
+        "name": ".gitignore"
+      },
+      "icon.png": {
+        "previousModTime": 1499753701719,
+        "modified": 1499753701719,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "LICENSE.md": {
+        "previousModTime": 1499753701723,
+        "modified": 1499753701723,
+        "seen": true,
+        "name": "LICENSE.md"
+      },
+      "main.js": {
+        "previousModTime": 1505102504932,
+        "modified": 1505102504932,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1499753701723,
+        "modified": 1499753701723,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1499753701723,
+        "modified": 1499753701723,
+        "seen": true,
+        "name": "README.md"
+      },
+      "SmartOfficeSystem.xdk": {
+        "previousModTime": 1499753701945,
+        "modified": 1499753701945,
+        "seen": true,
+        "name": "SmartOfficeSystem.xdk"
+      },
+      "SmartOfficeSystem.xdke": {
+        "previousModTime": 1505102624872,
+        "modified": 1505102624872,
+        "seen": true,
+        "name": "SmartOfficeSystem.xdke"
+      },
+      "websockets_client.png": {
+        "previousModTime": 1499753701723,
+        "modified": 1499753701723,
+        "seen": true,
+        "name": "websockets_client.png"
+      },
+      "client/index.css": {
+        "previousModTime": 1504754833348,
+        "modified": 1504754833348,
+        "seen": true,
+        "name": "client/index.css"
+      },
+      "client/index.html": {
+        "previousModTime": 1505102631939,
+        "modified": 1505102631939,
+        "seen": true,
+        "name": "client/index.html"
+      },
+      "client/index.js": {
+        "previousModTime": 1505100510871,
+        "modified": 1505100510871,
+        "seen": true,
+        "name": "client/index.js"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1499753701882,
+        "modified": 1499753701882,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      }
+    },
+    "boardFileStatus": {
+      "client/index.html": {
+        "previousModTime": 1505102632206
+      }
+    }
+  }
+}

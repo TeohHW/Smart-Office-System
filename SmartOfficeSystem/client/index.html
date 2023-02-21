@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+			<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+				<title>Smart Office System</title>
+				<link rel="stylesheet" href="client/index.css"/>
+				<!--    -->
+				<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+				<script src="socket.io/socket.io.js"></script>
+				<script src="moment.js"></script>
+				<script>
+$(function(){
+            var socket = io.connect('http://192.168.43.137:3000');
+            var temperature = $('#temperature');
+            var dateTime = $('#dateTime');
+            var countDown = $('#countDown');
+            socket.on('temperature',function(data){
+                temperature.html(data.celsius);
+            socket.on('dateTime',function(time){
+                dateTime.html(time.dateTime);
+            });
+            socket.on('countDown',function(time2){
+                countDown.html(time2.countDown);
+            });
+            });
+        });   
+</script>
+			</head>
+			<body>
+				<table width="100%" border="0" >
+					<div class="title">
+						<u>Smart Office System</u>
+						<td>
+							<font size="6">
+								<font color="Black">
+									<b>Date/Time:</b>
+									<font size="6" color="Blue">
+											<b>
+												<span id="dateTime"></span>
+											</b>
+										</td>
+									</div>
+									<div class="container">
+										<span class="sub-title" >
+											<b>Connected User(s):
+												<b>
+												</span>
+												<div id="user-container">
+													<div id="u1" class="user-circle"></div>
+												</div>
+											</div>
+											<tr>
+												<div class="container">
+													<td>
+														<span class="sub-title">
+															<font color="Black">
+																<b> Security status:</b>
+																<div id="led-container" class="off">
+																	<span>OFF</span>
+																</div>
+															</span>
+														</td>
+                                                          <td>
+                              <div class="hero-circle">
+  		                      <div class="hero-face">
+				              <div id="hour" class="hero-hour"></div>
+				              <div id="minute" class="hero-minute"></div>
+				              <div id="second" class="hero-second"></div>
+			                  </div>
+		                      </div>
+                          
+                            </td>
+														<td>
+															<font color="Green" size="5">
+                                                                
+																<b>Clock in time: 8:00 AM </b>
+															</font>
+														</br>
+														<font color="Red" size="5">
+															<b> Clock out time: 5:00 PM </b>
+														</font>
+													</br>
+													<font color="black" size="3">
+             <span id="countDown"></span>
+            </font>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<font size="5">
+														<font color="Black">
+                    Click to activate motion sensor:
+                  </font>
+													</font>
+													<div id="led-link-container">
+														<a id="led-link">
+															<font color="Purple">
+                      ON/OFF
+				
+															</td>
+															<td>
+																<font size="6">
+																	<font color="Black">
+																		<b> Door Switch: </b>
+																		<div id="doorstatus">
+																			<td>
+																				<font size="5" >
+																					<div id="doorbutton">
+																						<font color="Yellow">
+																							<b> Open/Close</b>
+																						</font>
+																					</td>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>
+																					<br />
+																					<b>
+																						<font size="6">
+																							<font color="Black"> Temperature is currently:
+														
+														
+																							</b>
+																							<br />
+																							<br />
+																						</td>
+																						<tr>
+																							<td>
+																								<font color="Green" size="9">
+																									<b>
+																										<span id="temperature"></span>°C  
+                                                                
+																									</b>
+																								</td>
+																							</tr>
+																						</tr>
+																					</div>
+																					<td>
+																						<span class="log-title">
+																							<u>Log:  </u>
+																						</span>
+																						<div class="log-container">
+																							<ul id="messages"></ul>
+																						</div>
+																					</tr>
+																					<td>
+																						<form action="">
+																							<input autocomplete="off" id="m" placeholder="Post message">
+																								<button>Send</button>
+																							</form>
+																							<script src="client/index.js"></script>
+																						</table>
+																					</body>
+																				</html>

@@ -1,0 +1,253 @@
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font:13px Helvetica, Arial;
+    background-image:url(https://ak5.picdn.net/shutterstock/videos/1073218/thumb/1.jpg);
+    background-repeat: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;  
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.title {
+    font-size: 3.2em;
+    padding: 0.2em 0em 0.5em 0em;
+    text-align: center;
+    color: #FF0000;
+    font-style: italic;
+    font-weight:bold;
+}
+
+.log-title {
+    color: black ;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.container {
+    padding: 0.5em 0em;
+}
+
+.sub-title {
+    font-size: 2.6em;
+}
+
+.user-circle, .my-circle {
+    width: 7em;
+    height: 3em;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 0.2em;
+    color: deeppink;
+    font-weight: bold;
+}
+
+.user-circle {
+    background-color:honeydew;
+}
+
+.my-circle {
+    background-color:honeydew;
+}
+
+.user-circle span, .my-circle span, #led-container span {
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+}
+
+#led-container {
+    width: 3em;
+    margin-right: 2em;
+    text-align: center;
+    font-size: 2em;
+}
+
+.off {
+    background-color: #FFFFFF;
+    border: 1px solid #7f8c8d;
+}
+
+.on {
+    background-color: green;
+    border: 1px solid #7f8c8d;
+}
+
+#led-container > span {
+    padding: 5em 0em;
+    color: black;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+#led-link {
+    background-color:#C2C2C2;
+    font-weight: bold;
+    font-size: 25px;
+    border-style: solid Black;
+    border-radius:2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#led-link:hover {
+    background-color: #7B7B7B;
+    color: gray;
+    cursor: pointer;
+}
+#led-link:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#led-link-container {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.log-container {
+    height: 10em;
+    overflow-y: scroll;
+}
+
+form {
+    background: rgb(17,94,162);
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 110%
+}
+
+form input {
+    border: 0;
+    padding: 10px;
+    width: 85%;
+    margin-right: .5%
+}
+
+form button {
+    width: 10%;
+    background: #EDEDED;
+    font-weight: bold;
+    border: none;
+    padding: 10px 3px;
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+#messages li {
+    padding: 5px 10px
+}
+
+#messages li:nth-child(odd) {
+    background: rgba(17,94,162, 0.1);
+}
+
+#messages li span {
+    color: black;
+    font-style: italic;
+} 
+#doorbutton {
+    background-color: #C2C2C2; 
+    border: 2px solid black;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#doorbutton:hover {
+    background-color:gray;
+    color: white;
+    cursor: pointer;
+}
+#doorbutton:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#doorstatus {
+    color: indigo;
+    font-style: italic;
+} 
+.hero-circle {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  position: relative;
+  border: 8px solid black;
+  border-radius: 50%;
+  background: url(../img/bg.png) 0 50%;
+}
+
+.hero-face {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-face:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  background: black;
+  border-radius: 6px;
+  content: "";
+  display: block;
+}
+
+.hero-hour {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -4px 0 -4px -25%;
+  padding: 4px 0 4px 25%;
+  background: black;
+  -webkit-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  border-radius: 4px 0 0 4px;
+}
+
+.hero-minute {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -40% -3px 0;
+  padding: 40% 3px 0;
+  background: black;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  border-radius: 3px 3px 0 0;
+}
+
+.hero-second {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -40% -1px 0 0;
+  padding: 40% 1px 0;
+  background: black;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
